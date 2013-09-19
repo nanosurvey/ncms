@@ -1,0 +1,257 @@
+/*
+Responsive Template Name: RS-1200 Prototype 43
+File: Layout CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+@font-face {
+	font-family: 'Conv_26555';
+	src: url('../../fonts/26555.eot');
+	src: local('?'), url('../../fonts/26555.woff') format('woff'), url('../../fonts/26555.ttf') format('truetype'), url('../../fonts/26555.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html{overflow-y:scroll;}
+
+
+
+body{margin:0; padding:0; font-size:14px; color:#919191; background-color:#232323;font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", Arial, sans-serif;}
+body.boxed{color:#919191; background-color:#000000;}
+
+.justify{text-align:justify;}
+.bold{font-weight:bold;}
+.center{text-align:center;}
+.right{text-align:right;}
+.uppercase{text-transform:uppercase;}
+.hidden{display:none;}
+
+.clear{display:block; clear:both;}
+.clear:after{display:block; visibility:hidden; height:0; clear:both; font-size:0; content:"";}
+
+a{color:#0070D8; outline:none; text-decoration:underline;}
+
+.fl_left{float:left;}
+.fl_right{float:right;}
+
+img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;}
+.boxholder{padding:9px; border:1px solid #D6D6D6; background-color: #EAEFB5; color: black;}
+.imgl{float:left; margin:0 15px 10px 0; clear:left;}
+.imgr{float:right; margin:0 0 10px 15px; clear:right;}
+
+/*----------------------------------------------HTML 5 Overrides-------------------------------------*/
+
+address, article, aside, figcaption, figure, footer, header, hgroup, nav, section{display:block; margin:0; padding:0;}
+
+/*----------------------------------------------Responsive Videos-------------------------------------*/
+
+.video{display:block; position:relative; width:100%; height:0; margin:0; padding:0 0 56.25% 0; /* using a 16:9 aspect ratio, the height is 56.25% of the width (9/16=0.5625) */}
+.video iframe{display:block; position:absolute; width:100%; height:100%; margin:0; padding:0;}
+
+/* ----------------------------------------------Wrapper-------------------------------------*/
+
+div.wrapper, .wrapper100{display:block; width:100%; margin:0; padding:0; text-align:left; word-wrap:break-word;}
+
+.row1, .row1 a{color:#C0BAB6; background-color:#000;}
+.row2{color:#919191; background-color:#232323; border-bottom:1px solid #333333;}
+.row3{color:#666666; background-color:#FFFFFF;}
+.row4, .row4 a{color:#919191; background-color:#232323;}
+.row5{color:#666666; background-color:#FFFFFF; border-bottom:1px solid #E5E4E3;}
+
+/*----------------------------------------------Generalise-------------------------------------*/
+
+body{font-family:Arial, Helvetica, sans-serif;}
+
+h1, h2, h3, h4, h5, h6{margin:0 0 30px 0; font-size:1.5em;font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", Arial, sans-serif; font-weight:normal; line-height:normal; text-transform:capitalize;}
+
+address{margin:10px 0; font-style:normal;}
+
+nav ul{margin:0; padding:0; list-style:none;}
+
+#header, #topnav, #intro, #container, #footer, #copyright{margin:0 auto;}
+
+/*----------------------------------------------Header-------------------------------------*/
+
+#header{padding:10px 0;}
+
+#header hgroup{display:block; float:left; width:auto; clear:right;}
+#header hgroup h1, #header hgroup h2{margin:0; font-weight:normal; text-transform:none;}
+#header hgroup h1{font-size:2em;}
+#header hgroup h2{font-size:1em;}
+
+#header #header-contact{display:block; float:right; width:auto; clear:right; font-size:45px; margin-top: 18px; line-height: 35px; color: #0099CB;}
+#header #header-contact ul{margin-top:15px;}
+#header #header-contact li{display:inline; margin:0 0 0 15px; padding:0 0 0 15px; border-left:1px solid #C0BAB6;}
+#header #header-contact li:first-child{margin:0; padding:0; border:none;}
+
+/*----------------------------------------------Content Area-------------------------------------*/
+
+#container{padding:50px 0; clear:both; font-size:1em; line-height:1.4em;}
+#container section{margin-bottom:50px;}
+#container section.last{margin-bottom:0;}
+
+.emphasise, #container .emphasise{font-size:2.0em; line-height:1.2em;}
+
+.font-small, #container .font-small{font-size:1em;}
+.font-medium, #container .font-medium{font-size:1.2em;}
+.font-large, #container .font-large{font-size:1.4em;}
+.font-xl, #container .xl-large{font-size:4em; line-height:1.2em;}
+.font-xxl, #container .xxl-large{font-size:6em; font-weight:normal; line-height:1.2em;}
+
+/* Sidebar */
+
+.sidebar aside{line-height:1.2em;}
+.sidebar aside h2{margin-bottom:10px; padding-bottom:8px; border-bottom:5px solid #E8E8E8; font-size:1.4em;}
+.sidebar aside ul.nospace li{margin-top:20px;}
+
+/*----------------------------------------------Footer-------------------------------------*/
+
+#footer{padding:30px 0;}
+#footer .footer_title{font-size:1.2em; margin-bottom:40px; padding-bottom:10px; border-bottom:1px solid #919191;}
+#footer div{margin-bottom:0;}
+#footer .tweet-container li{margin-top:18px; padding-top:18px; border-top:1px solid #333333;}
+#footer .tweet-container li:first-child{margin-top:0; padding-top:0; border-top:none;}
+#footer .tweet-container li .tweet_time{font-size:.8em;}
+
+#footer #ft_gallery.spacing li{margin-bottom:15px;}
+
+#footer form label{display:block; width:100%; margin:0 0 18px 0;}
+#footer form label input{margin-top:5px;}
+#footer form label input, #footer form textarea{color:#FFFFFF; background-color:#333333; border-color:#666666;}
+#footer form textarea{height:120px;}
+
+/*----------------------------------------------Copyright-------------------------------------*/
+
+#copyright{padding:20px 0; font-size:.85em;}
+#copyright p{margin:0; padding:0;}
+
+/*----------------------------------------------------------------------------------------*/
+/*-----------------------------------------Navigation-------------------------------------*/
+/*----------------------------------------------------------------------------------------*/
+
+/* Top Navigation */
+
+#topnav{padding:0; color:#C0BAB6; background-color:#232323; clear:both; word-wrap:normal; white-space:nowrap;}
+#topnav ul{margin:0; padding:0; list-style:none; text-transform:uppercase; font-size:12px;}
+#topnav ul ul{z-index:9999; position:absolute; width:190px; text-transform:none;}
+#topnav ul ul ul, #topnav ul ul ul ul{left:190px; top:0;}
+#topnav ul:first-child li:last-child > ul{right:0;}
+#topnav ul:first-child > li:last-child li > ul{left:-190px;}
+#topnav li{position:relative; display:block; float:left; margin:0 30px 0 0; padding:0;}
+#topnav li:first-child{}
+#topnav ul:first-child li:last-child{margin-right:0;}
+#topnav li li{width:100%; margin:0;}
+#topnav li a{display:block; padding:20px 0;}
+#topnav li li a{display:block; margin:0; padding:10px 15px;}
+#topnav ul ul{display:none;}
+#topnav ul li:hover > ul{display:block;}
+#topnav a{color:#C0BAB6; background-color:#232323; font-weight:bold;}
+#topnav li li a, #topnav li.active li a{color:#FFFFFF; background:#000000; font-weight:normal;}
+#topnav li.active a, #topnav a:hover{color:#FF9900; background-color:#232323;}
+#topnav ul li li:hover > a{color:#FFFFFF; background-color:#FF9900;}
+#topnav li a.drop, #topnav li.active a.drop{padding-left:15px; background-image:url("images/dropdown_side.gif"); background-position:5px center; background-repeat:no-repeat;}
+
+/* Top navigation for smaller resolutions */
+
+#topnav form{display:block; height:30px; margin:0 auto; padding:20px 0;}
+#topnav form select{display:block; width:100%; padding:8px; color:#FFFFFF; background-color:#232323; border:1px solid #494949; cursor:pointer; outline:none;}
+#topnav form select option{display:block; margin:10px; padding:0; cursor:pointer; outline:none; border:none;}
+
+/* Sidebar Navigation */
+
+.sidebar aside nav{display:block; width:100%; margin-bottom:30px;}
+.sidebar aside nav ul{margin:0; padding:0; list-style:none;}
+.sidebar aside nav li{margin:0 0 3px 0; padding:0;}
+.sidebar aside nav a{display:block; margin:0; padding:5px 10px 5px 20px; color:#666666; background-color:inherit; background:url("images/orange_file.gif") no-repeat 10px center; text-decoration:none; border-bottom:1px dotted #666666;}
+.sidebar aside nav a:hover{color:#FF9900; background-color:inherit;}
+.sidebar aside nav ul ul a{background:url("images/black_file.gif") no-repeat;}
+.sidebar aside nav ul ul a{padding-left:40px; background-position:30px center;}
+.sidebar aside nav ul ul ul a{padding-left:50px; background-position:40px center;}
+.sidebar aside nav ul ul ul ul a{padding-left:60px; background-position:50px center;}
+.sidebar aside nav ul ul ul ul ul a{padding-left:70px; background-position:60px center;}
+
+/* Pagination */
+
+.pagination{display:block; width:100%; text-align:center; clear:both; line-height:normal;}
+.pagination ul{margin:0; padding:0; list-style:none;}
+.pagination li{display:inline;}
+.pagination strong{font-weight:normal;}
+.pagination .next{margin:0;}
+.pagination a, .pagination .current strong, .pagination .splitter strong{display:inline-block; padding:5px 10px; margin:1px 2px;}
+.pagination a:first-child{margin-left:0;}
+.pagination a{border:1px solid #DFDFDF;}
+
+/* Footer Navigation */
+
+.footer_nav{margin:0; padding:0;}
+.footer_nav ul li{margin-top:12px; padding-top:12px; border-top:1px solid #333333;}
+.footer_nav ul li:first-child{margin-top:0; padding-top:0; border-top:none;}
+
+.logo {background-color:black; width: 220px; height:99px; background-image:url('../../images/NCMSBanner.jpg'); background-repeat:no-repeat}
+
+#below-top {width: 100%;
+background: rgb(135,224,253); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(135,224,253,1) 0%, rgba(83,203,241,1) 40%, rgba(5,171,224,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(135,224,253,1)), color-stop(40%,rgba(83,203,241,1)), color-stop(100%,rgba(5,171,224,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(135,224,253,1) 0%,rgba(83,203,241,1) 40%,rgba(5,171,224,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(135,224,253,1) 0%,rgba(83,203,241,1) 40%,rgba(5,171,224,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(135,224,253,1) 0%,rgba(83,203,241,1) 40%,rgba(5,171,224,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(135,224,253,1) 0%,rgba(83,203,241,1) 40%,rgba(5,171,224,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0',GradientType=0 ); /* IE6-9 */
+
+}
+ #below-top h2{padding:5px; margin: 0px;text-align: center; font-size:20px; font-weight: bold; color: black;}
+ 
+#share{clear: both; float: right; background-color: #F3F3F3; padding: 5px; border-bottom: 1px solid #E9E9E9;border-top: 1px solid #E9E9E9; width: 100%; margin-top: -25px;}
+
+/* Aweber CSS*/
+#af-form-1277906171 .af-body .af-textWrap{width:100%;display:block;float:none;}
+#af-form-1277906171 .af-body .privacyPolicy{color:#000000;font-size:11px;font-family:Trebuchet MS, sans-serif;}
+#af-form-1277906171 .af-body a{color:#9E9B9B;text-decoration:underline;font-style:normal;font-weight:normal;}
+#af-form-1277906171 .af-body input.text, #af-form-1277906171 .af-body textarea{background-color:#C7E698;border-width:0px;border-style:none;color:#000000;text-decoration:none;font-style:normal;font-weight:normal;font-size:18px; padding:7px; font-family:Trebuchet MS, sans-serif; width: 96%; }
+#af-form-1277906171 .af-body input.text:focus, #af-form-1277906171 .af-body textarea:focus{background-color:#C7E698;border-color:#389138;border-width:0px;border-style:solid;}
+#af-form-1277906171 .af-body label.previewLabel{display:block;width:100%;text-align:left;color:#389138;text-decoration:none;font-style:normal;font-weight:normal;font-size:16px;font-family:Trebuchet MS, sans-serif;}
+#af-form-1277906171 .af-body{padding-bottom:7px;padding-top:7px;background-repeat:repeat-x;background-position:center left;background-image:none;color:#000000;font-size:11px;font-family:Trebuchet MS, sans-serif;}
+#af-form-1277906171 .af-header{background-color:#FFFFFF;background-repeat:no-repeat;background-position:top left;background-image:url("../../images/header.png"); width: 42px; height: 32px;}
+#af-form-1277906171 .af-header1{padding-bottom:1px;padding-top:25px;padding-right:15px;padding-left:15px;background-color:#FFFFFF;background-repeat:no-repeat;background-position:top left;background-image:url("../../images/header.png");border-color:#4CAD26;border-width:0px;border-bottom-style:solid;border-left-style:none;border-right-style:none;border-top-style:none;color:#6C8F5D;font-size:12px;font-family:Trebuchet MS, sans-serif;}
+#af-form-1277906171 .af-quirksMode .bodyText{padding-top:2px;padding-bottom:2px;}
+#af-form-1277906171 .af-quirksMode{padding-right:15px;padding-left:15px;}
+#af-form-1277906171 .af-standards .af-element{padding-right:15px;padding-left:15px;}
+#af-form-1277906171 .bodyText p{margin:1em 0;}
+#af-form-1277906171 .buttonContainer input.submit{background-color:#000000;background-image:url("http://forms.aweber.com/images/forms/minimal/green/button.png");color:#FFFFFF;text-decoration:none;font-style:normal;font-weight:normal;font-size:14px;font-family:Verdana, sans-serif;}
+#af-form-1277906171 .buttonContainer input.submit{width:auto;}
+#af-form-1277906171 .buttonContainer{text-align:right;}
+#af-form-1277906171 body,#af-form-1277906171 dl,#af-form-1277906171 dt,#af-form-1277906171 dd,#af-form-1277906171 h1,#af-form-1277906171 h2,#af-form-1277906171 h3,#af-form-1277906171 h4,#af-form-1277906171 h5,#af-form-1277906171 h6,#af-form-1277906171 pre,#af-form-1277906171 code,#af-form-1277906171 fieldset,#af-form-1277906171 legend,#af-form-1277906171 blockquote,#af-form-1277906171 th,#af-form-1277906171 td{float:none;color:inherit;position:static;margin:0;padding:0;}
+#af-form-1277906171 button,#af-form-1277906171 input,#af-form-1277906171 submit,#af-form-1277906171 textarea,#af-form-1277906171 select,#af-form-1277906171 label,#af-form-1277906171 optgroup,#af-form-1277906171 option{float:none;position:static;margin:0;}
+#af-form-1277906171 div{margin:0;}
+#af-form-1277906171 fieldset{border:0;}
+#af-form-1277906171 form,#af-form-1277906171 textarea,.af-form-wrapper,.af-form-close-button,#af-form-1277906171 img{float:none;color:inherit;position:static;background-color:none;border:none;margin:0;padding:0;}
+#af-form-1277906171 input,#af-form-1277906171 button,#af-form-1277906171 textarea,#af-form-1277906171 select{font-size:100%;}
+#af-form-1277906171 p{color:inherit;}
+#af-form-1277906171 select,#af-form-1277906171 label,#af-form-1277906171 optgroup,#af-form-1277906171 option{padding:0;}
+#af-form-1277906171 table{border-collapse:collapse;border-spacing:0;}
+#af-form-1277906171 ul,#af-form-1277906171 ol{list-style-image:none;list-style-position:outside;list-style-type:disc;padding-left:40px;}
+#af-form-1277906171,#af-form-1277906171 .quirksMode{width:100%;}
+#af-form-1277906171.af-quirksMode{overflow-x:hidden;}
+#af-form-1277906171{background-color:#FFFFFF;border-color:#E3E3E3;border-width:1px;border-style:solid; width: 96%;}
+#af-form-1277906171{display:block;}
+#af-form-1277906171{overflow:hidden;}
+.af-body .af-textWrap{text-align:left;}
+.af-body input.image{border:none!important;}
+.af-body input.submit,.af-body input.image,.af-form .af-element input.button{float:none!important;}
+.af-body input.text{width:100%;float:none;}
+.af-body.af-standards input.submit{padding:4px 12px;}
+.af-clear{clear:both;}
+.af-element label{text-align:left;display:block;float:left;}
+.af-element{padding:5px 0;}
+.af-form-wrapper{text-indent:0;}
+.af-form{text-align:left;margin:auto;}
+.af-header{margin-bottom:0;margin-top:0;}
+.af-quirksMode .af-element{padding-left:0!important;padding-right:0!important;}
+.lbl-right .af-element label{text-align:right;}
+
+
+
+/* Aweber CSS*/
