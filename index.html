@@ -1,6 +1,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<!-- Begin Inspectlet Embed Code -->
+<script type="text/javascript" id="inspectletjs">
+	window.__insp = window.__insp || [];
+	__insp.push(['wid', 1534612533]);
+	(function() {
+		function __ldinsp(){var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://www.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); }
+		if (window.attachEvent){
+			window.attachEvent('onload', __ldinsp);
+		}else{
+			window.addEventListener('load', __ldinsp, false);
+		}
+	})();
+</script>
+<!-- End Inspectlet Embed Code -->
 <title>NCMS-NSF-Nanomanufacturing-Survey</title>
 <meta name="description" content="As nanotechnology evolves and is integrated into new products from prototype to mass-manufacturing, this fourth industry survey attempts to document key cross-sector trends and industry concerns regarding commercial readiness and sustainability of nanotechnology-enabled products. Previous surveys were conducted in 2003, 2006 and 2009. This survey addresses the critical need for increased information about the industry and its current challenges." />
 <meta name="keywords" content="nanotechnology,survey,nanotechnology,National Center for Manufacturing Sciences,NCMS,Nanomanufacturing Survey,NCMS Survey" />
@@ -9,11 +23,18 @@
 <link href="layout/styles/mediaqueries.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 <script type="text/javascript">stLight.options({publisher: "0abd0a15-a8ed-4dce-ba26-dcae5a54ceef", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+</style><script language="JavaScript" src="gen_validatorv4.js"
+    type="text/javascript" xml:space="preserve"></script>
 <!--[if lt IE 9]>
 <link href="layout/styles/ie/ie8.css" rel="stylesheet" type="text/css" media="all">
 <script src="layout/scripts/ie/css3-mediaqueries.min.js"></script>
 <script src="layout/scripts/ie/html5shiv.min.js"></script>
 <![endif]-->
+<style type="text/css" xml:space="preserve">
+
+
+.error_strings{ font-size:14px; color:red; }
+</style>
 </head>
 <body class="">
 <div class="wrapper row1">
@@ -85,7 +106,7 @@
       <div class="one_quarter">
         <article class="push30">
        
-<form method="post" class="af-form-wrapper" action="http://www.aweber.com/scripts/addlead.pl"  >
+<form method="post" class="af-form-wrapper" id="myform" name="myform" action="http://www.aweber.com/scripts/addlead.pl"  >
 <div style="display: none;">
 <input type="hidden" name="meta_web_form_id" value="1277906171" />
 <input type="hidden" name="meta_split_id" value="" />
@@ -107,12 +128,15 @@
 <div class="af-element">
 <label class="previewLabel" for="awf_field-53452198">Name: </label>
 <div class="af-textWrap">
+<div id='myform_name_errorloc' class="error_strings"></div>
 <input id="awf_field-53452198" type="text" name="name" class="text" value=""  tabindex="500" />
 </div>
 <div class="af-clear"></div></div>
 <div class="af-element">
 <label class="previewLabel" for="awf_field-53452199">Email: </label>
-<div class="af-textWrap"><input class="text" id="awf_field-53452199" type="text" name="email" value="" tabindex="501"  />
+<div class="af-textWrap">
+ <div id='myform_email_errorloc' class="error_strings"></div>
+<input class="text" id="awf_field-53452199" type="text" name="email" value="" tabindex="501"  />
 </div><div class="af-clear"></div>
 </div>
 <div class="af-element buttonContainer">
@@ -126,6 +150,20 @@
 </div>
 <div style="display: none;"><img src="http://forms.aweber.com/form/displays.htm?id=jEzs7JwMbIzsjA==" alt="" /></div>
 </form>
+<script language="JavaScript" type="text/javascript"
+    xml:space="preserve">//<![CDATA[
+//You should create the validator only after the definition of the HTML form
+  var frmvalidator  = new Validator("myform");
+    frmvalidator.EnableOnPageErrorDisplay();
+    frmvalidator.EnableMsgsTogether();
+
+    frmvalidator.addValidation("name","req","Please enter your Name");
+    frmvalidator.addValidation("name","maxlen=20",	"Max length for FirstName is 20");
+
+    frmvalidator.addValidation("email","maxlen=50");
+    frmvalidator.addValidation("email","req");
+    frmvalidator.addValidation("email","email");
+//]]></script>
 <script type="text/javascript">
     <!--
     (function() {
@@ -183,6 +221,7 @@
     <p class="fl_right"></p>
   </div>
 </div>
+
 <!-- Scripts -->
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
@@ -202,4 +241,5 @@
   ga('send', 'pageview');
 
 </script>
+
 </html>
